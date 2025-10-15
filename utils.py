@@ -407,6 +407,15 @@ async def get_shortlink(link, grp_id, is_second_shortener=False, is_third_shorte
         except Exception as e2:
             print(f"Universal fallback failed: {e2}")
             return link
+
+
+async def get_settings(group_id):
+    settings = temp.SETTINGS.get(group_id)
+    if not settings:
+        settings = await db.get_settings(group_id)
+        temp.SETTINGS.update({group_id: settings})
+    return settings
+    
     
 async def save_group_settings(group_id, key, value):
     current = await get_settings(group_id)
