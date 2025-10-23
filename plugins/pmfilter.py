@@ -1410,12 +1410,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup([
                     [
                         InlineKeyboardButton("🚀 Download ", url=dreamx_download),
-                        InlineKeyboardButton('🖥️ Watch ', url=dreamx_stream),
-                        InlineKeyboardButton('18+ Channel kids stay away', url='https://t.me/+AsDE80jaxFYxNDJl')
+                        InlineKeyboardButton('🖥️ Watch ', url=dreamx_stream)
                     ],
                     [
-                        InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=UPDATE_CHNL_LNK),
-                        InlineKeyboardButton('18+ Channel kids stay away', url='https://t.me/+AsDE80jaxFYxNDJl')
+                        InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=UPDATE_CHNL_LNK)
                     ]
                 ])
             )
