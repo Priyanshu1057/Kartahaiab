@@ -1414,6 +1414,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=UPDATE_CHNL_LNK)
+                    ],
+                    [
+                        InlineKeyboardButton('18+ Channel kids stay away', url='https://t.me/+AsDE80jaxFYxNDJl')
                     ]
                 ])
             )
