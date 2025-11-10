@@ -630,4 +630,5 @@ async def finalize_and_post(client: Client, query: CallbackQuery, session_id: in
         logger.error(
             f"An unexpected error occurred while posting '{session['movie_name']}':", exc_info=True)
 
+
 #code is created by @bharath_boy for public use so atleast don't remove credits
