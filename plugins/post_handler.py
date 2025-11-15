@@ -20,7 +20,7 @@ post_sessions = {}
 
 BOT_NAME = temp.U_NAME
 USE_GETFILE_BUTTON_BY_DEFAULT = True
-DEFAULT_WATERMARK = "Join [Filmztube](https://t.me/Filmztube)"
+DEFAULT_WATERMARK = "Join [FilmyflixHD](https://t.me/FilmyflixHD)"
 LANGUAGES_FORMAT = "➥ <b>Languages :</b> <code>{langs}</code>"
 RESOLUTIONS_FORMAT = "\n➥ <b>Qualities :</b> <code>{resolutions}</code>"
 OTT_FORMAT = "\n➥ <b>Available on :</b> <code>{otts}</code>"
@@ -175,7 +175,7 @@ async def start_post_session(client: Client, message: Message, user_id: int, mov
         year = movie_details.get("year", "")
         movie_year = f"{title} {year}".strip()
         movie_year = re.sub(r"[ *:\.]", "-", movie_year)
-        url = f"https://t.me/{BOT_NAME}?start=getfile-{movie_year}"
+        url = f"https://t.me/FilmyflixHDbot?start=getfile-{movie_year}"
         post_sessions[user_id]["buttons"].append(
             [InlineKeyboardButton("📥 Get Files 📥", url=url)])
         logger.info(f"Default 'Get Files' button added for session {user_id}")
@@ -632,3 +632,4 @@ async def finalize_and_post(client: Client, query: CallbackQuery, session_id: in
 
 
 #code is created by @bharath_boy for public use so atleast don't remove credits
+
